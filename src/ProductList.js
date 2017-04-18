@@ -12,9 +12,7 @@ const ProductListItem = ({ auth, product, destroy, setFavorite, unsetFavorite })
         (auth.user.bestId === product.id) ? (
           <button onClick={unsetFavorite} className="btn btn-success pull-right">Unset Favorite</button>
         ) : (
-            <div>
-              <button onClick={setFavorite} className="btn btn-primary pull-right">Set As Favorite</button>
-            </div>
+          <button onClick={setFavorite} className="btn btn-primary pull-right">Set As Favorite</button>
           ) :
         (null)
       }
